@@ -125,9 +125,7 @@
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\Default-568h%402x.png" />
-    <BundleResource Include="Resources\default.css" />
     <BundleResource Include="Resources\XamarinLogo.png" />
-    <BundleResource Include="Resources\contact.html" />
     <BundleResource Include="Resources\Default.png" />
     <BundleResource Include="Resources\Default%402x.png" />
     <BundleResource Include="Resources\Icon-60%402x.png" />
@@ -137,7 +135,6 @@
     <BundleResource Include="Resources\Icon-Small-40%402x.png" />
     <BundleResource Include="Resources\Icon-Small.png" />
     <BundleResource Include="Resources\Icon-Small%402x.png" />
-    <BundleResource Include="Resources\about.html" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Info.plist" />
@@ -149,7 +146,21 @@
     <Compile Include="AppDelegate.cs" />
     <Compile Include="BaseUrl_iOS.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <BundleResource Include="..\WorkingWithWebview\Assets\about.html">
+      <Link>Resources\about.html</Link>
+    </BundleResource>
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="..\WorkingWithWebview\Assets\contact.html">
+      <Link>Resources\contact.html</Link>
+    </BundleResource>
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="..\WorkingWithWebview\Assets\default.css">
+      <Link>Resources\default.css</Link>
+    </BundleResource>
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>

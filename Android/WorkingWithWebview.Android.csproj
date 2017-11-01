@@ -119,13 +119,24 @@
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <ItemGroup>
-    <AndroidAsset Include="Assets\default.css" />
     <AndroidAsset Include="Assets\local.html" />
     <AndroidAsset Include="Assets\XamarinLogo.png" />
-    <AndroidAsset Include="Assets\contact.html" />
-    <AndroidAsset Include="Assets\about.html" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <AndroidAsset Include="..\WorkingWithWebview\Assets\about.html">
+      <Link>Assets\about.html</Link>
+    </AndroidAsset>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="..\WorkingWithWebview\Assets\contact.html">
+      <Link>Assets\contact.html</Link>
+    </AndroidAsset>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="..\WorkingWithWebview\Assets\default.css">
+      <Link>Assets\default.css</Link>
+    </AndroidAsset>
+  </ItemGroup>
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
       <ErrorText>This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
