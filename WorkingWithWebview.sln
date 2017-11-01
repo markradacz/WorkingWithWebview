@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.24720.0
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2002
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkingWithWebview", "WorkingWithWebview\WorkingWithWebview.csproj", "{F6B57CE3-8780-4D40-A34E-E430ECD36857}"
 EndProject
@@ -171,6 +171,7 @@ Global
 		{7AA328E0-970B-46E9-933A-7F15AEA0BB12}.AppStore|x86.ActiveCfg = Release|Any CPU
 		{7AA328E0-970B-46E9-933A-7F15AEA0BB12}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{7AA328E0-970B-46E9-933A-7F15AEA0BB12}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7AA328E0-970B-46E9-933A-7F15AEA0BB12}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
 		{7AA328E0-970B-46E9-933A-7F15AEA0BB12}.Debug|ARM.ActiveCfg = Debug|Any CPU
 		{7AA328E0-970B-46E9-933A-7F15AEA0BB12}.Debug|iPhone.ActiveCfg = Debug|Any CPU
 		{7AA328E0-970B-46E9-933A-7F15AEA0BB12}.Debug|iPhone.Build.0 = Debug|Any CPU
@@ -424,5 +425,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {703C2AAA-193A-40F1-86BE-D3A3B87C086C}
 	EndGlobalSection
 EndGlobal
